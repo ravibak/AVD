@@ -1,6 +1,6 @@
 # AVD
 
-This repo contains a tested module of Terraform to help automate a deployment of a new Azure Virtual Desktop Host Pool along with the other backend AVD configuration such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at)
+This repo contains a tested module of Terraform to help automate a deployment of a new Azure Virtual Desktop Host Pool along with the other backend AVD configuration such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at).
 
 I did not write them from the scratch. Changed few bits by doing trial, error and learning. 
 Path to modules https://github.com/ravibak/AVD/tree/main/workload/terraform/ExistingADandVNET
@@ -11,7 +11,7 @@ There are few small but important details.
 
 As with any Terraform based automation, main and variable state file used here along with a .tfvars which is additional area to set variable.
 
-Host Pool Metadata locations are only supported to be certain regions. In this case, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. 
+Host Pool Metadata locations are only supported to be in certain regions only. In this case, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. 
 
 As such, pay attention to different location and resource group for Host Pool and Session Hosts.
 
