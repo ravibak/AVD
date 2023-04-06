@@ -17,12 +17,13 @@ As such, pay attention to different location and resource group for Host Pool an
 
 Pay attention to block named "data" for referring existing Azure vNet.
 
+```terraform
 data "azurerm_subnet" "subnet" {
   name                 = "Subnet1"
   virtual_network_name = "VNETNAME"
   resource_group_name  = "VNETRGNAME"
 }
-
+```
 
 
 If you are experienced with Terraform, you would know the drill but if not, here are the series of commands (once you copy the state files in a folder)
