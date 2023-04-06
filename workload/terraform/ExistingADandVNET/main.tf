@@ -50,12 +50,6 @@ resource "azurerm_virtual_desktop_workspace_application_group_association" "ws-d
   workspace_id         = azurerm_virtual_desktop_workspace.workspace.id
 }
 
-
-
-
-
-
-
 locals {
   registration_token = azurerm_virtual_desktop_host_pool_registration_info.registrationinfo.token
 }
@@ -68,8 +62,7 @@ data "azurerm_subnet" "subnet" {
   resource_group_name  = "WVD-FALL"
 }
 
-
-
+# This may not be useful as local admin password is also defined in tfvar state file. 
 resource "random_string" "AVD_local_password" {
   count            = var.rdsh_count
   length           = 16
@@ -78,6 +71,7 @@ resource "random_string" "AVD_local_password" {
   override_special = "*!@#?"
 }
 
+# This is for session hosts RG
 resource "azurerm_resource_group" "rg" {
   name     = var.rg
   location = var.resource_group_location_rg
