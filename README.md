@@ -2,6 +2,7 @@
 
 This repo contains a tested module of Terraform to help automate a deployment of a new Azure Virtual Desktop Host Pool along with the other backend AVD configuration such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at)
 
+I did not write them from the scratch. Changed few bits by doing trial, error and learning. 
 Path to modules https://github.com/ravibak/AVD/tree/main/workload/terraform/ExistingADandVNET
 
 Sensitive variables such as password are stored in variable files in this example, but it is strongly recommended against. As of this writing, I was still learning Terraform/IaC so could not find a way to call secrets using a key vault for example. (or I was lazy :)).
