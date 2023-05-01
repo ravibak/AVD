@@ -40,9 +40,12 @@ This sample takes a very basic approach of setting up the environment but you co
 
 Here are the series of commands (once you copy the state files in a folder)
 
-I have used a Windows PC running PowerShell 7
+I have used a Windows PC running PowerShell 7.
+
 Install Terraform. 
+
 Download the configuration files from this repo to a local folder. 
+
 Execute these commands.
 
 ```sh
