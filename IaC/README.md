@@ -63,4 +63,12 @@ terraform plan -out main.tfplan
 terraform apply main.tfplan
 ```
 
+## Issues
+
+- Few things such as credentials are stored as variable in two place, there is need for improvements. It appears terraform.tfvars variables are preferred. 
+
+- User/Group assignment to AVD Application Group/workspace did not work. Need to manually assign them. 
+
+- Template is using a Built-in Market place image, you may want to replace it with any custom image to cater needs such as custom apps, FSLogix agents etc. 
+
 

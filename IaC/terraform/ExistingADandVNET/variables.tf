@@ -70,7 +70,7 @@ variable "domain_user_upn" {
 variable "domain_password" {
   type        = string
   default     = "domainjoinadminpassword"
-  description = "Password of the user to authenticate with the domain"
+  description = "Password of the user to authenticate with the domain" # Password varaible in terraform.tfvars is preferred
   sensitive   = true
 }
 
@@ -80,7 +80,7 @@ variable "vm_size" {
 }
 
 variable "ou_path" {
-  default = ""
+  default = ""  # Update the actual OU path as needed.
 }
 
 variable "local_admin_username" {
@@ -91,7 +91,7 @@ variable "local_admin_username" {
 
 variable "local_admin_password" {
   type        = string
-  default     = "ChangeMe123!"
+  default     = "ChangeMe123$"
   description = "local admin password"
   sensitive   = true
 }
