@@ -12,5 +12,3 @@ avd_users = [
   "finuser1@contoso.com",
   "finuser2@contoso.com"
 ]
-
-# I was expecting avd_users will be assigned to the AVD Workspace/App Group but it did not work.
