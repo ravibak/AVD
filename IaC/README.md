@@ -39,10 +39,13 @@ Here are the series of commands (once you copy the state files in a folder)
 I have used a Windows PC running PowerShell 7
 Downloaded and extracted Terraform. Set the path in Environmental Variables.
 
+```sh
 az login
+```
 
 If you have multiple subscriptions and need to choose a specific one then,
 
+```sh
 az account show
 
 az account set --subscription "xxxxxx-xxx-xxx-xfxf-x30xf5x85b4"
@@ -52,6 +55,6 @@ terraform init -upgrade
 terraform plan -out main.tfplan
  
 terraform apply main.tfplan
-
+```
 
 
