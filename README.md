@@ -1,6 +1,9 @@
 # Azure Virtual Desktop Deployment code samples
 
-This repo contains a tested module of Terraform to help automate a deployment of a new Azure Virtual Desktop Host Pool along with the other backend AVD configuration such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at).
+Purpose of this repo is to provide some IaC code samples for  deploying Azure Vitual Desktop scenarios. In perticular trying to address some unique situation not available in other forums.  
+
+
+Azure Virtual Desktop i such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at).
 
 I did not write them from the scratch. Changed few bits by doing trial, error and learning. 
 Path to modules https://github.com/ravibak/AVD/tree/main/workload/terraform/ExistingADandVNET
