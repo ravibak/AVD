@@ -22,6 +22,10 @@ There are few important things to note.
 
 - Pay attention to block named "data" for referring existing Azure vNet.
 
+- I have used a marketplace image, please replace the image referenece if you are using a custom image. 
+
+
+
 ```terraform
 data "azurerm_subnet" "subnet" {
   name                 = "Subnet1"
@@ -37,7 +41,9 @@ This sample takes a very basic approach of setting up the environment but you co
 Here are the series of commands (once you copy the state files in a folder)
 
 I have used a Windows PC running PowerShell 7
-Downloaded and extracted Terraform. Set the path in Environmental Variables.
+Install Terraform. 
+Download the configuration files from this repo to a local folder. 
+Execute these commands.
 
 ```sh
 az login

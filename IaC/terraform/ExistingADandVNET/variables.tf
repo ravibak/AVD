@@ -32,7 +32,7 @@ default     = "AVD-TF-HP"
 # Change value to match the current date and time.
 variable "rfc3339" {
 type        = string
-default     = "2023-04-06T12:43:13Z"
+default     = "2023-05-02T2:43:13Z"
 description = "Registration token expiration"
 }
 
