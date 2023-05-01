@@ -1,12 +1,12 @@
 ## Overview
 
-Microsoft official Terraform samples for Azure Virtual Dekstop are [available here](https://learn.microsoft.com/en-us/azure/developer/terraform/configure-azure-virtual-desktop)
+Microsoft official Terraform samples for Azure Virtual Dekstop are [available here](https://learn.microsoft.com/en-us/azure/developer/terraform/configure-azure-virtual-desktop).
 
 While they are a great starters for the initial deployment, scenario such as setting up a new host pool in an existing Azure Virtual network with a Active Directory domain join is not covered currently. 
 
 This perticular scenario could be very helpful for just deploying new pools as required or perhaps during a Disaster Recovery situation.
 
-One of the great thing about Infra as a code is being able to levarage the community contents. Full disclosure, I did not write this sample from the scratch. Reused few samples from the community and updated accordingly to fit the purpose.
+One of the great thing about Infra as a code is being able to levarage the community contents. Full disclosure, I did not write this sample from the scratch. Reused major portion of the code from  community and updated accordingly to fit the purpose.
 
 [Path to modules](https://github.com/ravibak/AVD/tree/main/IaC/terraform/ExistingADandVNET)
 
