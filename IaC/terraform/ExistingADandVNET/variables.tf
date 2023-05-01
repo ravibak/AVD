@@ -29,7 +29,7 @@ description = "Name of the Azure Virtual Desktop host pool"
 default     = "AVD-TF-HP"
 }
 
-# Change value to match the current date and time.
+# Change value to something in future of 1 hour to 28 days from the time of executing the plan (UTC Time zone)
 variable "rfc3339" {
 type        = string
 default     = "2023-05-02T2:43:13Z"
