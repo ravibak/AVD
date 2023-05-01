@@ -9,8 +9,8 @@ domain_user_upn      = "domainjoinadmin"     # do not include domain name as thi
 domain_password      = "domainjoinadminpassword"
 hostpool             = "AVD-TF-HP"
 avd_users = [
-  "finuser1@ftclabs.com",
-  "finuser2@ftclabs.com"
+  "finuser1@contoso.com",
+  "finuser2@contoso.com"
 ]
 
 # I was expecting avd_users will be assigned to the AVD Workspace/App Group but it did not work.
