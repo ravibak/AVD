@@ -20,6 +20,8 @@ There are few important things to note.
 
 - AVD Host Pool Metadata locations are supported to be deloyed in certain Azure regions only. In this sample, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. As such, pay attention to different location and resource group for Host Pool and Session Hosts.
 
+- Pay attention to VM SKU/Size. Also the OS Disk SKU (Standard HDD is used in this sample. May be be good for a production scenario)
+
 - Pay attention to block named "data" for referring an existing Azure vNet.
 
 
