@@ -55,7 +55,11 @@ If you have multiple subscriptions and need to choose a specific one then,
 az account show
 
 az account set --subscription "xxxxxx-xxx-xxx-xfxf-x30xf5x85b4"
+```
 
+Core Terraform commands to execute.
+
+```sh
 terraform init -upgrade
  
 terraform plan -out main.tfplan
