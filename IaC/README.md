@@ -6,7 +6,7 @@ While they are a great starters for the initial deployment, scenario such as set
 
 This perticular scenario could be very helpful for just deploying new pools as required or perhaps during a Disaster Recovery situation.
 
-One of the great thing about Infra as a code is being able to levarage the community contents. Full disclosure, I did not write this sample from the scratch. Reused major portion of the code from  community and updated accordingly to fit the purpose.
+One of the great thing about Infra as a code is being able to levarage the community contents. Full disclosure, I did not write this sample from scratch. Reused major portion of the code from  community and updated accordingly to fit the purpose.
 
 [Path to modules](https://github.com/ravibak/AVD/tree/main/IaC/terraform/ExistingADandVNET)
 
