@@ -68,7 +68,7 @@ terraform apply main.tfplan
 
 ## Issues
 
-- Few things such as credentials are stored as variable in two place, there is need for improvements. It appears terraform.tfvars variables are preferred. 
+- Credentials are stored as variable in two place, there is need for improvements. It appears terraform.tfvars variables are preferred. 
 
 - User/Group assignment to AVD Application Group/workspace did not work. Need to manually assign them. 
 
