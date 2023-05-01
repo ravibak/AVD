@@ -22,9 +22,6 @@ There are few important things to note.
 
 - Pay attention to block named "data" for referring existing Azure vNet.
 
-- I have used a marketplace image, please replace the image referenece if you are using a custom image. 
-
-
 
 ```terraform
 data "azurerm_subnet" "subnet" {
