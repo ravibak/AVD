@@ -20,7 +20,7 @@ There are few important things to note.
 
 - AVD Host Pool Metadata locations are supported to be deloyed in certain Azure regions only. In this sample, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. As such, pay attention to different location and resource group for Host Pool and Session Hosts.
 
-- Pay attention to block named "data" for referring existing Azure vNet.
+- Pay attention to block named "data" for referring an existing Azure vNet.
 
 
 ```terraform
@@ -65,10 +65,10 @@ terraform apply main.tfplan
 
 ## Issues
 
-- Credentials are stored as variable in two place, there is need for improvement. It appears terraform.tfvars variables are preferred. 
+- Credentials are stored as variable in two places, there is need for improvement. It appears terraform.tfvars variables are preferred. 
 
 - User/Group assignment to AVD Application Group/workspace did not work. Need to manually assign them. 
 
-- Template is using a Built-in Market place image, you may want to replace it with any custom image to cater needs such as custom apps, FSLogix agents etc. 
+- Template is using a Built-in Market place VM image, you may want to replace it with any custom image to cater needs such as custom apps, FSLogix agents etc. 
 
 
