@@ -2,6 +2,9 @@
 
 Purpose of this repo is to provide some IaC code samples for  deploying Azure Vitual Desktop scenarios. In perticular trying to address some unique situation not available in other forums.  
 
+1. [Deploy a new Host Pool in an existing Virtual Network with Active Directory Join](https://github.com/ravibak/AVD/tree/main/IaC) 
+
+
 
 Azure Virtual Desktop i such as workspace/app pool. More importantly being able to deploy AVD session hosts in an existing Virtual Network and join to an Active Directory Domain (Domain Controllers running in a peered vnet where the session hosts would be placed at).
 
