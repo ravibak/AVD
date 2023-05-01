@@ -1,6 +1,6 @@
 ## Overview
 
-Microsoft official Terraform samples are [available here](https://learn.microsoft.com/en-us/azure/developer/terraform/configure-azure-virtual-desktop)
+Microsoft official Terraform samples for Azure Virtual Dekstop are [available here](https://learn.microsoft.com/en-us/azure/developer/terraform/configure-azure-virtual-desktop)
 
 While they are a great starters for the initial deployment, scenario such as setting up a new host pool in an existing Azure Virtual network with a Active Directory domain join is not covered currently. 
 
@@ -12,12 +12,13 @@ Path to modules https://github.com/ravibak/AVD/tree/main/workload/terraform/Exis
 
 
 
-There are few small but important details.
+There are few important things to note.
+
 - Sensitive variables such as password are stored in variable files in this example, but it is strongly recommended against. As of this writing, I was still learning Terraform/IaC so could not find a way to call secrets using a key vault for example. (or I was lazy :)).
 
 - As with any Terraform based automation, main and variable state file used here along with a .tfvars which is additional area to set variable.
 
-- Host Pool Metadata locations are only supported to be in certain regions only. In this case, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. As such, pay attention to different location and resource group for Host Pool and Session Hosts.
+- AVD Host Pool Metadata locations are supported to be deloyed in certain Azure regions only. In this sample, Host Pool Metadata is stored in eastus and session host VMs are deployed in southeastasia. As such, pay attention to different location and resource group for Host Pool and Session Hosts.
 
 - Pay attention to block named "data" for referring existing Azure vNet.
 
@@ -28,9 +29,12 @@ data "azurerm_subnet" "subnet" {
   resource_group_name  = "VNETRGNAME"
 }
 ```
+## Terraform Setup
 
+If you are experienced with Terraform, you  know the drill.
+This sample takes a very basic approach of setting up the environment but you could explore avenues like remote location for state file (Azure Strage) and or deploy the code using DevOps pipelines. 
 
-If you are experienced with Terraform, you would know the drill but if not, here are the series of commands (once you copy the state files in a folder)
+Here are the series of commands (once you copy the state files in a folder)
 
 I have used a Windows PC running PowerShell 7
 Downloaded and extracted Terraform. Set the path in Environmental Variables.
