@@ -1,18 +1,18 @@
 variable "resource_group_location" {
 default     = "eastus"
-description = "Location of the resource group for Host Pool Metadata."
+description = "Location of the resource group for Host Pool Metadata location."
 }
 
 variable "resource_group_location_rg" {
 default     = "southeastasia"
-description = "Location of the resource group for session hosts."
+description = "Location of the resource group for session hosts Virtual Machines."
 }
 
 # Change the RG name accordingly.
 variable "rg_name" {
 type        = string
 default     = "rg-avd-resources"
-description = "Name of the Resource group for Host Pool"
+description = "Name of the Resource group for storing Host Pool resources"
 }
 
 # Change the name of the workspace accordingly.
@@ -47,7 +47,7 @@ description = "Prefix of the name of the AVD machine(s)"
 variable "rg" {
   type        = string
   default     = "rg-avd-compute"
-  description = "Name of the Resource group in which to deploy session host"
+  description = "Name of the Resource group it store Session host VM resources"
 }
 
 variable "rdsh_count" {
@@ -64,7 +64,7 @@ variable "domain_name" {
 variable "domain_user_upn" {
   type        = string
   default     = "domainjoinadminusername" # do not include domain name as this is appended
-  description = "Username for domain join (do not include domain name as this is appended)"
+  description = "Username for domain join"
 }
 
 variable "domain_password" {
