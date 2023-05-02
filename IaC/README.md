@@ -22,6 +22,8 @@ There are few important things to note.
 
 - Pay attention to VM SKU/Size. Also the OS Disk SKU (Standard HDD is used in this sample. May be be good for a production scenario)
 
+- This template is using a Built-in Market place VM image, you may want to replace it with any custom image to cater needs such as custom apps, FSLogix agents etc. 
+
 - Pay attention to block named "data" for referring an existing Azure vNet.
 
 
@@ -75,6 +77,5 @@ terraform apply main.tfplan
 
 - User/Group assignment to AVD Application Group/workspace did not work. Need to manually assign them. 
 
-- Template is using a Built-in Market place VM image, you may want to replace it with any custom image to cater needs such as custom apps, FSLogix agents etc. 
 
 
